@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'animate.css/animate.min.css';
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  :root {
+    --background: 255, 255%, 255%; /* Light background */
+    --foreground: 0, 0%, 0%; /* Light foreground (black text) */
+    --card: 255, 255%, 255%; /* Light card background */
+    --card-foreground: 0, 0%, 0%; /* Light card foreground */
+    --popover: 255, 255%, 255%; /* Light popover background */
+    --popover-foreground: 0, 0%, 0%; /* Light popover foreground */
+    --primary: 220, 20%, 40%; /* Light primary color */
+    --primary-foreground: 0, 0%, 100%; /* Light primary foreground (white text) */
+    --secondary: 240, 240%, 240%; /* Light secondary color */
+    --secondary-foreground: 0, 0%, 0%; /* Light secondary foreground */
+    --muted: 240, 240%, 240%; /* Light muted color */
+    --muted-foreground: 100, 100%, 100%; /* Light muted foreground */
+    --accent: 220, 20%, 40%; /* Light accent color */
+    --accent-foreground: 0, 0%, 100%; /* Light accent foreground */
+    --destructive: 0, 100%, 50%; /* Light destructive color */
+    --destructive-foreground: 255, 255%, 255%; /* Light destructive foreground */
+    --border: 200, 200%, 200%; /* Light border color */
+    --input: 240, 240%, 240%; /* Light input background */
+    --ring: 220, 20%, 40%; /* Light ring color */
+    --radius: 0.5rem; /* Border radius */
+    --chart-1: 12, 76%, 61%; /* Chart colors */
+    --chart-2: 173, 58%, 39%;
+    --chart-3: 197, 37%, 24%;
+    --chart-4: 43, 74%, 66%;
+    --chart-5: 27, 87%, 67%;
+  }
+
+  .dark {
+    --background: 34, 34%, 34%; /* Dark background */
+    --foreground: 240, 240%, 240%; /* Dark foreground (ivory text) */
+    --card: 34, 34%, 34%; /* Dark card background */
+    --card-foreground: 240, 240%, 240%; /* Dark card foreground */
+    --popover: 34, 34%, 34%; /* Dark popover background */
+    --popover-foreground: 240, 240%, 240%; /* Dark popover foreground */
+    --primary: 240, 240%, 240%; /* Dark primary color */
+    --primary-foreground: 34, 34%, 34%; /* Dark primary foreground */
+    --secondary: 60, 60%, 60%; /* Dark secondary color */
+    --secondary-foreground: 240, 240%, 240%; /* Dark secondary foreground */
+    --muted: 60, 60%, 60%; /* Dark muted color */
+    --muted-foreground: 240, 240%, 240%; /* Dark muted foreground */
+    --accent: 60, 60%, 60%; /* Dark accent color */
+    --accent-foreground: 240, 240%, 240%; /* Dark accent foreground */
+    --destructive: 255, 0%, 0%; /* Dark destructive color */
+    --destructive-foreground: 240, 240%, 240%; /* Dark destructive foreground */
+    --border: 60, 60%, 60%; /* Dark border color */
+    --input: 60, 60%, 60%; /* Dark input background */
+    --ring: 34, 34%, 34%; /* Dark ring color */
+    --chart-1: 220, 70%, 50%; /* Chart colors */
+    --chart-2: 160, 60%, 45%;
+    --chart-3: 30, 80%, 55%;
+    --chart-4: 280, 65%, 60%;
+    --chart-5: 340, 75%, 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

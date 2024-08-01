@@ -1,181 +1,77 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/3DSWYAvZtZu
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
-"use client"
+import Link from "next/link";
+import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
+import { Button } from "@/components/ui/button";
+import { SVGProps } from 'react';
 
-import { useState } from "react"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
-
-export default function Component() {
-  const [isDarkMode, setIsDarkMode] = useState(false)
+export function Navbar() {
   return (
-    <header
-      className={`fixed top-0 left-0 z-50 w-full ${isDarkMode ? "bg-background text-foreground" : "bg-transparent"}`}
-    >
+    <header className="fixed top-0 left-0 z-50 w-full bg-gradient-to-b from-black to-gray-100">
       <nav className="container flex items-center justify-between h-16 px-4 md:px-6">
-        <Link
-          href="#"
-          className={`text-lg font-bold ${isDarkMode ? "text-primary-foreground" : "text-primary-foreground"}`}
-          prefetch={false}
-        >
+        <Link href="#landing" className="text-lg font-bold text-white" prefetch={false}>
           Acme Inc.
         </Link>
         <div className="hidden md:flex items-center gap-6">
-          <Link
-            href="#"
-            className={`text-sm font-medium ${
-              isDarkMode ? "text-primary-foreground hover:underline" : "text-primary-foreground hover:underline"
-            }`}
-            prefetch={false}
-          >
+          <Link href="#landing" className="text-sm font-bold text-white hover:underline" prefetch={false}>
             Home
           </Link>
-          <Link
-            href="#"
-            className={`text-sm font-medium ${
-              isDarkMode ? "text-primary-foreground hover:underline" : "text-primary-foreground hover:underline"
-            }`}
-            prefetch={false}
-          >
+          <Link href="#portfolio" className="text-sm font-bold text-white hover:underline" prefetch={false}>
             Portfolio
           </Link>
-          <Link
-            href="#"
-            className={`text-sm font-medium ${
-              isDarkMode ? "text-primary-foreground hover:underline" : "text-primary-foreground hover:underline"
-            }`}
-            prefetch={false}
-          >
-            Templates
+          <Link href="#call-to-action" className="text-sm font-bold text-white hover:underline" prefetch={false}>
+            Call to Action
           </Link>
-          <Link
-            href="#"
-            className={`text-sm font-medium ${
-              isDarkMode ? "text-primary-foreground hover:underline" : "text-primary-foreground hover:underline"
-            }`}
-            prefetch={false}
-          >
+          <Link href="#future-software-release" className="text-sm font-bold text-white hover:underline" prefetch={false}>
             Future Releases
           </Link>
-          <Link
-            href="#"
-            className={`text-sm font-medium ${
-              isDarkMode ? "text-primary-foreground hover:underline" : "text-primary-foreground hover:underline"
-            }`}
-            prefetch={false}
-          >
+          <Link href="#about-us" className="text-sm font-bold text-white hover:underline" prefetch={false}>
             About Us
           </Link>
-          <Link
-            href="#"
-            className={`text-sm font-medium ${
-              isDarkMode ? "text-primary-foreground hover:underline" : "text-primary-foreground hover:underline"
-            }`}
-            prefetch={false}
-          >
+          <Link href="#video-presentation" className="text-sm font-bold text-white hover:underline" prefetch={false}>
             Video Presentation
           </Link>
-          <Link
-            href="#"
-            className={`text-sm font-medium ${
-              isDarkMode ? "text-primary-foreground hover:underline" : "text-primary-foreground hover:underline"
-            }`}
-            prefetch={false}
-          >
+          <Link href="#contact" className="text-sm font-bold text-white hover:underline" prefetch={false}>
             Contact
           </Link>
         </div>
-        <div className="flex items-center gap-2">
-          <Button variant="ghost" size="icon" className="rounded-full" onClick={() => setIsDarkMode(!isDarkMode)}>
-            {isDarkMode ? <SunIcon className="h-6 w-6" /> : <MoonIcon className="h-6 w-6" />}
-            <span className="sr-only">Toggle dark mode</span>
-          </Button>
-          <Sheet>
-            <SheetTrigger asChild>
-              <Button variant="outline" size="icon" className="md:hidden">
-                <MenuIcon className="h-6 w-6" />
-                <span className="sr-only">Toggle navigation menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="left" className="md:hidden">
-              <div className="grid gap-4 py-6">
-                <Link
-                  href="#"
-                  className={`flex w-full items-center py-2 text-lg font-semibold ${
-                    isDarkMode ? "text-primary-foreground" : "text-primary-foreground"
-                  }`}
-                  prefetch={false}
-                >
-                  Home
-                </Link>
-                <Link
-                  href="#"
-                  className={`flex w-full items-center py-2 text-lg font-semibold ${
-                    isDarkMode ? "text-primary-foreground" : "text-primary-foreground"
-                  }`}
-                  prefetch={false}
-                >
-                  Portfolio
-                </Link>
-                <Link
-                  href="#"
-                  className={`flex w-full items-center py-2 text-lg font-semibold ${
-                    isDarkMode ? "text-primary-foreground" : "text-primary-foreground"
-                  }`}
-                  prefetch={false}
-                >
-                  Templates
-                </Link>
-                <Link
-                  href="#"
-                  className={`flex w-full items-center py-2 text-lg font-semibold ${
-                    isDarkMode ? "text-primary-foreground" : "text-primary-foreground"
-                  }`}
-                  prefetch={false}
-                >
-                  Future Releases
-                </Link>
-                <Link
-                  href="#"
-                  className={`flex w-full items-center py-2 text-lg font-semibold ${
-                    isDarkMode ? "text-primary-foreground" : "text-primary-foreground"
-                  }`}
-                  prefetch={false}
-                >
-                  About Us
-                </Link>
-                <Link
-                  href="#"
-                  className={`flex w-full items-center py-2 text-lg font-semibold ${
-                    isDarkMode ? "text-primary-foreground" : "text-primary-foreground"
-                  }`}
-                  prefetch={false}
-                >
-                  Video Presentation
-                </Link>
-                <Link
-                  href="#"
-                  className={`flex w-full items-center py-2 text-lg font-semibold ${
-                    isDarkMode ? "text-primary-foreground" : "text-primary-foreground"
-                  }`}
-                  prefetch={false}
-                >
-                  Contact
-                </Link>
-              </div>
-            </SheetContent>
-          </Sheet>
-        </div>
+        <Sheet>
+          <SheetTrigger asChild>
+            <Button variant="outline" size="icon" className="md:hidden">
+              <MenuIcon className="h-6 w-6" />
+              <span className="sr-only">Toggle navigation menu</span>
+            </Button>
+          </SheetTrigger>
+          <SheetContent side="left" className="md:hidden">
+            <div className="grid gap-4 py-6">
+              <Link href="#landing" className="flex w-full items-center py-2 text-lg font-bold text-white hover:text-blue-600 transition-transform transform hover:scale-1.25" prefetch={false}>
+                Home
+              </Link>
+              <Link href="#portfolio" className="flex w-full items-center py-2 text-lg font-bold text-white hover:text-blue-600 transition-transform transform hover:scale-1.25" prefetch={false}>
+                Portfolio
+              </Link>
+              <Link href="#call-to-action" className="flex w-full items-center py-2 text-lg font-bold text-white hover:text-blue-600 transition-transform transform hover:scale-1.25" prefetch={false}>
+                Call to Action
+              </Link>
+              <Link href="#future-software-release" className="flex w-full items-center py-2 text-lg font-bold text-white hover:text-blue-600 transition-transform transform hover:scale-1.25" prefetch={false}>
+                Future Releases
+              </Link>
+              <Link href="#about-us" className="flex w-full items-center py-2 text-lg font-bold text-white hover:text-blue-600 transition-transform transform hover:scale-1.25" prefetch={false}>
+                About Us
+              </Link>
+              <Link href="#video-presentation" className="flex w-full items-center py-2 text-lg font-bold text-white hover:text-blue-600 transition-transform transform hover:scale-1.25" prefetch={false}>
+                Video Presentation
+              </Link>
+              <Link href="#contact" className="flex w-full items-center py-2 text-lg font-bold text-white hover:text-blue-600 transition-transform transform hover:scale-1.25" prefetch={false}>
+                Contact
+              </Link>
+            </div>
+          </SheetContent>
+        </Sheet>
       </nav>
     </header>
   )
 }
 
-function MenuIcon(props) {
+function MenuIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -196,56 +92,7 @@ function MenuIcon(props) {
   )
 }
 
-
-function MoonIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
-    </svg>
-  )
-}
-
-
-function SunIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <circle cx="12" cy="12" r="4" />
-      <path d="M12 2v2" />
-      <path d="M12 20v2" />
-      <path d="m4.93 4.93 1.41 1.41" />
-      <path d="m17.66 17.66 1.41 1.41" />
-      <path d="M2 12h2" />
-      <path d="M20 12h2" />
-      <path d="m6.34 17.66-1.41 1.41" />
-      <path d="m19.07 4.93-1.41 1.41" />
-    </svg>
-  )
-}
-
-
-function XIcon(props) {
+function XIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}

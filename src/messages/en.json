@@ -2,5 +2,12 @@
   "HomePage": {
     "title": "Hello World!",
     "ImageUrl":"https://storage.googleapis.com/dinan/dinanweb/lrg1.png"
+  },
+  "Slider": {
+    "title": "Hello World!",
+    "ImageUrl":"https://storage.googleapis.com/dinan/dinanweb/lrg1.png",
+    "ImageUrl2" : "https://storage.googleapis.com/dinan/images/backgrounds/max15.jpg",
+    "ImageUrl3" : "https://storage.googleapis.com/dinan/images/backgrounds/max25.jpg"
+
   }
 }

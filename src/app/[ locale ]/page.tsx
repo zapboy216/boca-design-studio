@@ -8,7 +8,9 @@ import ContactSection from '@components/ContactSection';
 
 export default function HomePage() {
   return (
+   
     <div>
+      
       <Landing />
       <Portfolio />
       <CallToAction />
@@ -17,5 +19,7 @@ export default function HomePage() {
       <VideoPresentation />
       <ContactSection />
     </div>
+    
+
   );
 }

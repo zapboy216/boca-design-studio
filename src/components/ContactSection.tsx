@@ -1,9 +1,14 @@
 const ContactSection = () => {
   return (
-    <section id="contact" className="min-h-screen flex items-center justify-center bg-gray-700">
+    <section id="contact" className="min-h-screen flex items-center justify-center bg-neutral-100 dark:bg-neutral-900" >
       <h1 className="text-4xl animate__animated animate__fadeIn">Contact Us</h1>
     </section>
   );
 };
 
 export default ContactSection;
+
+
+
+
+

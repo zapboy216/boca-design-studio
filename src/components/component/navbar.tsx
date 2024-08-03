@@ -5,31 +5,31 @@ import { SVGProps } from 'react';
 
 export function Navbar() {
   return (
-    <header className="fixed top-0 left-0 z-50 w-full bg-gradient-to-b from-black to-gray-100">
+    <header className="fixed top-0 left-0 z-50 w-full bg-neutral-100 dark:bg-neutral-900">
       <nav className="container flex items-center justify-between h-16 px-4 md:px-6">
-        <Link href="#landing" className="text-lg font-bold text-white" prefetch={false}>
+        <Link href="#landing" className="text-lg font-bold  text-black dark:text-white" prefetch={false}>
           Acme Inc.
         </Link>
         <div className="hidden md:flex items-center gap-6">
-          <Link href="#landing" className="text-sm font-bold text-white hover:underline" prefetch={false}>
+          <Link href="#landing" className="text-md  text-black hover:underline" prefetch={false}>
             Home
           </Link>
-          <Link href="#portfolio" className="text-sm font-bold text-white hover:underline" prefetch={false}>
+          <Link href="#portfolio" className="text-md  text-black hover:underline" prefetch={false}>
             Portfolio
           </Link>
-          <Link href="#call-to-action" className="text-sm font-bold text-white hover:underline" prefetch={false}>
+          <Link href="#call-to-action" className="text-md text-black hover:underline" prefetch={false}>
             Call to Action
           </Link>
-          <Link href="#future-software-release" className="text-sm font-bold text-white hover:underline" prefetch={false}>
+          <Link href="#future-software-release" className="text-md text-black hover:underline" prefetch={false}>
             Future Releases
           </Link>
-          <Link href="#about-us" className="text-sm font-bold text-white hover:underline" prefetch={false}>
+          <Link href="#about-us" className="text-md  text-black hover:underline" prefetch={false}>
             About Us
           </Link>
-          <Link href="#video-presentation" className="text-sm font-bold text-white hover:underline" prefetch={false}>
+          <Link href="#video-presentation" className="text-md  text-black hover:underline" prefetch={false}>
             Video Presentation
           </Link>
-          <Link href="#contact" className="text-sm font-bold text-white hover:underline" prefetch={false}>
+          <Link href="#contact" className="text-md  text-black hover:underline" prefetch={false}>
             Contact
           </Link>
         </div>

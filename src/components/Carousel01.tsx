@@ -1,8 +1,3 @@
-/*  2024-02-28 04:30:00
-
-
-*/
-
 import React, { useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
@@ -20,21 +15,16 @@ const Carousel01 = () => {
 
   return (
     <>
-      
-
-      <div className="bg-neutral-100 dark:bg-neutral-900">
-        <div
-          className="embla border max-wlg mt-0 mb-12 mx-auto h-56"
-          ref={emblaRef}
-        >
-          <div className="embla__container h-full my-2 mx-3 py-2 px-3">
-            <div className="dark:text-white embla__slide flex items-center justify-center">
+      <div className="bg-neutral-100 dark:bg-neutral-900 h-screen w-screen">
+        <div className="embla h-full w-full" ref={emblaRef}>
+          <div className="embla__container flex h-full w-full">
+            <div className="text-black dark:text-white embla__slide flex items-center justify-center h-full w-full bg-red-500">
               Slide 1
             </div>
-            <div className="dark:text-white embla__slide flex items-center justify-center">
+            <div className="text-black dark:text-white embla__slide flex items-center justify-center h-full w-full bg-green-500">
               Slide 2
             </div>
-            <div className="dark:text-white embla__slide flex items-center justify-center">
+            <div className="text-black dark:text-white embla__slide flex items-center justify-center h-full w-full bg-blue-500">
               Slide 3
             </div>
           </div>

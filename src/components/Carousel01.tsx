@@ -20,7 +20,7 @@ const Carousel01 = () => {
 
   return (
     <>
-      <h3 className="dark:text-neutral-100">Carousel01</h3>
+      
 
       <div className="bg-neutral-100 dark:bg-neutral-900">
         <div

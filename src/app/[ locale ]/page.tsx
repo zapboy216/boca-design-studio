@@ -28,13 +28,15 @@ export default function HomePage() {
     <div className={`${darkMode && "dark"}`}>
       <div className="bg-neutral-100 dark:bg-neutral-900">
         <Carousel01 />
-        <Carousel02 />
-        <Carousel03 />
+        
+        
       </div>
       <Portfolio />
+      <Carousel02 />
     <CallToAction />
     <FutureSoftwareRelease />
     <AboutUs />
+    <Carousel03 />
     <VideoPresentation />
     <ContactSection />
       <button

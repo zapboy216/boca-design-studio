@@ -2,10 +2,12 @@ import React, { useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import Image from 'next/image'
+import { useTranslations } from 'next-intl';
 
 const Carousel01 = () => {
+  const t = useTranslations('Slider');
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
-    Autoplay({ delay: 3000 }),
+    Autoplay({ delay: 4000 }),
   ]);
 
   useEffect(() => {
@@ -22,7 +24,7 @@ const Carousel01 = () => {
             <div className="embla__slide flex items-center justify-center h-full w-full relative">
               <video
                 className="absolute top-0 left-0 w-full h-full object-cover"
-                src="/path/to/your/video.mp4"
+                src={t('VideoUrl')}
                 autoPlay
                 loop
                 muted
@@ -37,10 +39,11 @@ const Carousel01 = () => {
               </div>
             </div>
             <div className="embla__slide flex items-center justify-center h-full w-full relative">
-              <img
+              <Image
                 className="absolute top-0 left-0 w-full h-full object-cover"
-                src="/path/to/your/image1.jpg"
+                src={t('ImageUrl')}
                 alt="Slide 2 Background"
+                fill={true}
               />
               <div className="relative z-10 text-center p-4">
                 <h1 className="text-4xl font-bold mb-4 text-black dark:text-white">
@@ -52,10 +55,11 @@ const Carousel01 = () => {
               </div>
             </div>
             <div className="embla__slide flex items-center justify-center h-full w-full relative">
-              <img
+              <Image
                 className="absolute top-0 left-0 w-full h-full object-cover"
-                src="/path/to/your/image2.jpg"
+                src={t('ImageUrl2')}
                 alt="Slide 3 Background"
+                fill={true}
               />
               <div className="relative z-10 text-center p-4">
                 <h1 className="text-4xl font-bold mb-4 text-black dark:text-white">

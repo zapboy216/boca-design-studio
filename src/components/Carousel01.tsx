@@ -7,7 +7,7 @@ import { useTranslations } from 'next-intl';
 const Carousel01 = () => {
   const t = useTranslations('Slider');
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
-    Autoplay({ delay: 4000 }),
+    Autoplay({ delay: 4400 }),
   ]);
 
   useEffect(() => {

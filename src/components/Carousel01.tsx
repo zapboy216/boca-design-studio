@@ -73,6 +73,7 @@ const Carousel01 = () => {
                 <p className="text-lg text-black dark:text-white">
                   {t('paragraph_three')}
                 </p>
+                
               </div></div>
             </div>
           </div>

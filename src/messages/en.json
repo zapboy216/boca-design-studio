@@ -8,7 +8,12 @@
     "VideoUrl": "https://storage.googleapis.com/dinan/videos/AdobeStock_713225846_Video_4K_Preview.mp4",
     "ImageUrl":"https://storage.googleapis.com/dinan/dinanweb/lrg1.png",
     "ImageUrl2" : "https://storage.googleapis.com/dinan/images/backgrounds/max15.jpg",
-    "ImageUrl3" : "https://storage.googleapis.com/dinan/images/backgrounds/max25.jpg"
-
+    "ImageUrl3" : "https://storage.googleapis.com/dinan/images/backgrounds/max25.jpg",
+    "heading_one": "Welcome to Boca Design Studio",
+    "heading_two": "Innovative Solutions",
+    "heading_three": "Creative Excellence",
+    "paragraph_one": "Creating captivating and innovative designs that leave a lasting impression.",
+    "paragraph_two": "Transforming your ideas into stunning visual realities.",
+    "paragraph_three": "Delivering exceptional design solutions for every project."
   }
 }

@@ -4,10 +4,11 @@ import Autoplay from "embla-carousel-autoplay";
 import Image from 'next/image'
 import { useTranslations } from 'next-intl';
 
+
 const Carousel01 = () => {
   const t = useTranslations('Slider');
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
-    Autoplay({ delay: 4400 }),
+    Autoplay({ delay: 4000 }),
   ]);
 
   useEffect(() => {
@@ -29,13 +30,15 @@ const Carousel01 = () => {
                 loop
                 muted
               />
-              <div className="relative z-10 text-center p-4">
-                <h1 className="text-4xl font-bold mb-4 text-white">
-                  Welcome to Boca Design Studio
+              <div className="relative z-10 text-center p-4 animate__animated animate__fadeInUp">
+                <div className="p-10 glassmorphism dark:charcoal-bg">
+                <h1 className="text-4xl font-bold mb-4 text-black dark:text-white">
+                 {t('heading_one')}
                 </h1>
-                <p className="text-lg text-white">
-                  Creating captivating and innovative designs that leave a lasting impression.
+                <p className="text-lg text-black dark:text-white">
+                  {t('paragraph_one')}
                 </p>
+                </div>
               </div>
             </div>
             <div className="embla__slide flex items-center justify-center h-full w-full relative">
@@ -45,14 +48,15 @@ const Carousel01 = () => {
                 alt="Slide 2 Background"
                 fill={true}
               />
-              <div className="relative z-10 text-center p-4">
+              <div className="relative z-10 text-center p-4 animate__animated animate__fadeInUp">
+              <div className="p-10 glassmorphism dark:charcoal-bg">
                 <h1 className="text-4xl font-bold mb-4 text-black dark:text-white">
-                  Innovative Solutions
+                 {t('heading_two')}
                 </h1>
                 <p className="text-lg text-black dark:text-white">
-                  Transforming your ideas into stunning visual realities.
+                  {t('paragraph_two')}
                 </p>
-              </div>
+              </div></div>
             </div>
             <div className="embla__slide flex items-center justify-center h-full w-full relative">
               <Image
@@ -61,14 +65,15 @@ const Carousel01 = () => {
                 alt="Slide 3 Background"
                 fill={true}
               />
-              <div className="relative z-10 text-center p-4">
+              <div className="relative z-10 text-center p-4 animate__animated animate__fadeInUp">
+              <div className="p-10 glassmorphism dark:charcoal-bg">
                 <h1 className="text-4xl font-bold mb-4 text-black dark:text-white">
-                  Creative Excellence
+                  {t('heading_three')}
                 </h1>
                 <p className="text-lg text-black dark:text-white">
-                  Delivering exceptional design solutions for every project.
+                  {t('paragraph_three')}
                 </p>
-              </div>
+              </div></div>
             </div>
           </div>
         </div>

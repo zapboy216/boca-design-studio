@@ -11,25 +11,25 @@ export function Navbar() {
           Acme Inc.
         </Link>
         <div className="hidden md:flex items-center gap-6">
-          <Link href="#landing" className="text-md  text-black hover:underline" prefetch={false}>
+          <Link href="#landing" className="text-md  text-black dark:text-white hover:underline" prefetch={false}>
             Home
           </Link>
-          <Link href="#portfolio" className="text-md  text-black hover:underline" prefetch={false}>
+          <Link href="#portfolio" className="text-md  text-black dark:text-white hover:underline" prefetch={false}>
             Portfolio
           </Link>
-          <Link href="#call-to-action" className="text-md text-black hover:underline" prefetch={false}>
+          <Link href="#call-to-action" className="text-md text-black dark:text-white hover:underline" prefetch={false}>
             Call to Action
           </Link>
-          <Link href="#future-software-release" className="text-md text-black hover:underline" prefetch={false}>
+          <Link href="#future-software-release" className="text-md text-black dark:text-white hover:underline" prefetch={false}>
             Future Releases
           </Link>
-          <Link href="#about-us" className="text-md  text-black hover:underline" prefetch={false}>
+          <Link href="#about-us" className="text-md  text-black dark:text-white hover:underline" prefetch={false}>
             About Us
           </Link>
-          <Link href="#video-presentation" className="text-md  text-black hover:underline" prefetch={false}>
+          <Link href="#video-presentation" className="text-md  text-black dark:text-white hover:underline" prefetch={false}>
             Video Presentation
           </Link>
-          <Link href="#contact" className="text-md  text-black hover:underline" prefetch={false}>
+          <Link href="#contact" className="text-md  text-black dark:text-white hover:underline" prefetch={false}>
             Contact
           </Link>
         </div>

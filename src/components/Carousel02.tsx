@@ -1,42 +1,57 @@
-/*  2024-02-28 05:41:50
 
-
-*/
-
-import React, { useEffect } from "react";
+import React, { useCallback, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
-import Autoscroll from "embla-carousel-auto-scroll";
 
-const Carousel03 = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
-    Autoscroll({ delay: 2000 }),
-  ]);
+const Carousel02 = () => {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, []);
+
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
 
   useEffect(() => {
     if (emblaApi) {
       console.log(emblaApi.slideNodes()); // Access API
     }
   }, [emblaApi]);
-
   return (
     <>
-      <h3 className="dark:text-neutral-100">Carousel02</h3>
-
+     
       <div className="bg-neutral-100 dark:bg-neutral-900">
-        <div
-          className="embla border max-wlg mt-0 mb-12 mx-auto h-56"
-          ref={emblaRef}
-        >
-          <div className="embla__container h-full my-2 mx-3 py-2 px-3">
-            <div className="dark:text-white embla__slide flex items-center justify-center">
-              Slide 1
+        <div className="embla">
+          <div
+            className="embla__viewport border max-wlg mt-0 mb-0 mx-auto h-56"
+            ref={emblaRef}
+          >
+            <div className="embla__container h-full">
+              <div className="dark:text-white embla__slide flex irems-center justify-center">
+                Slide 1
+              </div>
+              <div className="dark:text-white embla__slide flex irems-center justify-center">
+                Slide 2
+              </div>
+              <div className="dark:text-white embla__slide flex irems-center justify-center">
+                Slide 3
+              </div>
             </div>
-            <div className="dark:text-white embla__slide flex items-center justify-center">
-              Slide 2
-            </div>
-            <div className="dark:text-white embla__slide flex items-center justify-center">
-              Slide 3
-            </div>
+          </div>
+          <div className=" ">
+            <button
+              className="dark:text-white bg-neutral-300 dark:bg-neutral-700 py-1 px-2"
+              onClick={scrollPrev}
+            >
+              Prev
+            </button>
+            <button
+              className="dark:text-white bg-neutral-300 dark:bg-neutral-700 py-1 px-2 my-2 mx-4"
+              onClick={scrollNext}
+            >
+              Next
+            </button>
           </div>
         </div>
       </div>
@@ -44,4 +59,4 @@ const Carousel03 = () => {
   );
 };
 
-export default Carousel03;
+export default Carousel02;

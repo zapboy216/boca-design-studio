@@ -12,6 +12,8 @@ import FutureSoftwareRelease from '@components/FutureSoftwareRelease';
 import AboutUs from '@components/AboutUs';
 import VideoPresentation from '@components/VideoPresentation';
 import ContactSection from '@components/ContactSection';
+import { Navbar } from '@/components/component/navbar';
+import Footer from '@/components/Footer';
 
 export default function HomePage() {
   const [darkMode, setDarkMode] = useState(false);
@@ -27,24 +29,28 @@ export default function HomePage() {
       
     <div className={`${darkMode && "dark"}`}>
       <div className="bg-neutral-100 dark:bg-neutral-900">
+        <Navbar />
         <Carousel01 />
         
         
-      </div>
-      <Portfolio />
-      <Carousel02 />
+      
+      <Portfolio/>
+      <Carousel03 />
+    
     <CallToAction />
     <FutureSoftwareRelease />
     <AboutUs />
-    <Carousel03 />
+    <Carousel02 />
     <VideoPresentation />
     <ContactSection />
+    <Footer />
       <button
-        className="fixed w-16 h-16 bottom-16 right-16 bg-neutral-900 dark:bg-neutral-100 rounded-full text-white dark:text-neutral-900 font-semibold"
+        className="fixed w-16 h-16 top-16 right-16 bg-neutral-900 dark:bg-neutral-100 rounded-full text-white dark:text-neutral-900"
         onClick={toggleDarkMode}
       >
         {darkMode ? "Light Mode" : "Dark Mode"}
       </button>
+      </div>
     </div>
   </>
     

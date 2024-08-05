@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-import { Navbar } from '@/components/component/navbar';
-import Footer from '@/components/Footer';
+
+
 import "@/styles/globals.css";
 
 const poppins = Poppins({
@@ -29,9 +29,9 @@ export default async function RootLayout({
     <html lang={locale}>
       <body className={poppins.className}>
         <NextIntlClientProvider messages={messages}>
-          <Navbar />
+          
           {children}
-          <Footer />
+         
         </NextIntlClientProvider>
       </body>
     </html>

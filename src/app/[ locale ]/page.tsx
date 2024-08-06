@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import { toastifyNotification } from "@/utils/toastifyNotification";
 import Carousel01 from "@/components/Carousel01";
-import "@/styles/carousel.css";
 import Carousel02 from "@/components/Carousel02";
 import Carousel03 from "@/components/Carousel03";
 import Portfolio from '@components/Portfolio';
@@ -14,6 +13,7 @@ import VideoPresentation from '@components/VideoPresentation';
 import ContactSection from '@components/ContactSection';
 import { Navbar } from '@/components/component/navbar';
 import Footer from '@/components/Footer';
+import "@/styles/carousel.css";
 
 export default function HomePage() {
   const [darkMode, setDarkMode] = useState(false);
@@ -29,14 +29,10 @@ export default function HomePage() {
       
     <div className={`${darkMode && "dark"}`}>
       <div className="bg-neutral-100 dark:bg-neutral-900">
-        <Navbar />
-        <Carousel01 />
-        
-        
-      
-      <Portfolio/>
-      <Carousel03 />
-    
+    <Navbar />
+    <Carousel01 />
+    <Portfolio/>
+    <Carousel03 />  
     <CallToAction />
     <FutureSoftwareRelease />
     <AboutUs />
@@ -44,12 +40,14 @@ export default function HomePage() {
     <VideoPresentation />
     <ContactSection />
     <Footer />
+      
       <button
         className="fixed w-16 h-16 top-16 right-16 bg-neutral-900 dark:bg-neutral-100 rounded-full text-white dark:text-neutral-900"
         onClick={toggleDarkMode}
       >
         {darkMode ? "Light Mode" : "Dark Mode"}
       </button>
+     
       </div>
     </div>
   </>

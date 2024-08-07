@@ -1,6 +1,9 @@
 
 import React, { useCallback, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
+import { Slide } from '@/components/component/slide'
+import { SlideTwo } from '@/components/component/slide-two'
+import { SlideThree } from '@/components/component/slide-three'
 
 const Carousel02 = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, []);
@@ -29,13 +32,13 @@ const Carousel02 = () => {
           >
             <div className="embla__container h-full">
               <div className="dark:text-white embla__slide flex irems-center justify-center">
-                Slide 1
+                <Slide />
               </div>
               <div className="dark:text-white embla__slide flex irems-center justify-center">
-                Slide 2
+                <SlideTwo />
               </div>
               <div className="dark:text-white embla__slide flex irems-center justify-center">
-                Slide 3
+                <SlideThree />
               </div>
             </div>
           </div>

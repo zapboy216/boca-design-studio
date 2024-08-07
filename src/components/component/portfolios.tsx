@@ -2,13 +2,18 @@ import Image from "next/image"
 import Link from "next/link"
 import { Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter, DialogClose } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
+import  AnimatedText  from '@/components/AnimatedText';
 
 export function Portfolios() {
   return (
     <section className="container mx-auto py-12 md:py-16 lg:py-20">
       <div className="mb-8 md:mb-10 lg:mb-12">
+        <AnimatedText>
         <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl">Portfolio</h2>
+        </AnimatedText>
+        <AnimatedText>
         <p className="mt-2 text-muted-foreground md:text-lg">Check out some of my previous web development projects.</p>
+        </AnimatedText>
       </div>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         <div className="group relative overflow-hidden rounded-lg border transition-all duration-300 hover:shadow-lg">

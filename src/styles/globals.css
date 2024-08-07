@@ -72,3 +72,20 @@ html {
     @apply bg-background text-foreground;
   }
 }
+.fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

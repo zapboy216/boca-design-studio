@@ -54,7 +54,7 @@ export function ContactUs() {
                 <div className="flex items-start gap-4">
                   <MapPinIcon className="mt-1 h-6 w-6 text-primary" />
                   <div>
-                    <p className="font-medium">Acme Inc.</p>
+                    <p className="font-medium">Boca Inc.</p>
                     <p className="text-muted-foreground">123 Main St, Anytown USA 12345</p>
                   </div>
                 </div>
@@ -69,7 +69,7 @@ export function ContactUs() {
                   <MailOpenIcon className="mt-1 h-6 w-6 text-primary" />
                   <div>
                     <p className="font-medium">Email</p>
-                    <p className="text-muted-foreground">info@acme.com</p>
+                    <p className="text-muted-foreground">info@Boca.com</p>
                   </div>
                 </div>
               </div>

@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-import Image from 'next/image'
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import "@/styles/carousel.css";
-
 
 const Carousel01 = () => {
   const t = useTranslations('Slider');
@@ -31,14 +30,15 @@ const Carousel01 = () => {
                 loop
                 muted
               />
+              <div className="absolute top-0 left-0 w-full h-full bg-black opacity-20"></div>
               <div className="relative z-10 text-center p-4 animate__animated animate__fadeInUp">
                 <div className="p-20 bg-neutral-100 dark:bg-neutral-900 bg-charcoal" style={{ opacity: 0.5 }}>
-                <h1 className="text-4xl font-bold mb-4 text-black dark:text-white">
-                 {t('heading_one')}
-                </h1>
-                <p className="text-lg text-black dark:text-white">
-                  {t('paragraph_one')}
-                </p>
+                  <h1 className="text-4xl font-bold mb-4 text-black dark:text-white">
+                    {t('heading_one')}
+                  </h1>
+                  <p className="text-lg text-black dark:text-white">
+                    {t('paragraph_one')}
+                  </p>
                 </div>
               </div>
             </div>
@@ -49,15 +49,17 @@ const Carousel01 = () => {
                 alt="Slide 2 Background"
                 fill={true}
               />
+              <div className="absolute top-0 left-0 w-full h-full bg-black opacity-20"></div>
               <div className="relative z-10 text-center p-4 animate__animated animate__fadeInUp">
-              <div className="p-20 bg-neutral-100 dark:bg-neutral-900 bg-charcoal" style={{ opacity: 0.5 }}>
-                <h1 className="text-4xl font-bold mb-4 text-black dark:text-white">
-                 {t('heading_two')}
-                </h1>
-                <p className="text-lg text-black dark:text-white">
-                  {t('paragraph_two')}
-                </p>
-              </div></div>
+                <div className="p-20 bg-neutral-100 dark:bg-neutral-900 bg-charcoal" style={{ opacity: 0.5 }}>
+                  <h1 className="text-4xl font-bold mb-4 text-black dark:text-white">
+                    {t('heading_two')}
+                  </h1>
+                  <p className="text-lg text-black dark:text-white">
+                    {t('paragraph_two')}
+                  </p>
+                </div>
+              </div>
             </div>
             <div className="embla__slide flex items-center justify-center h-full w-full relative">
               <Image
@@ -66,16 +68,17 @@ const Carousel01 = () => {
                 alt="Slide 3 Background"
                 fill={true}
               />
+              <div className="absolute top-0 left-0 w-full h-full bg-black opacity-20"></div>
               <div className="relative z-10 text-center p-4 animate__animated animate__fadeInUp">
-              <div className="p-20 bg-neutral-100 dark:bg-neutral-900 bg-charcoal" style={{ opacity: 0.5 }}>
-                <h1 className="text-4xl font-bold mb-4 text-black dark:text-white">
-                  {t('heading_three')}
-                </h1>
-                <p className="text-lg text-black dark:text-white">
-                  {t('paragraph_three')}
-                </p>
-                
-              </div></div>
+                <div className="p-20 bg-neutral-100 dark:bg-neutral-900 bg-charcoal" style={{ opacity: 0.7 }}>
+                  <h1 className="text-4xl font-bold mb-4 text-black dark:text-white">
+                    {t('heading_three')}
+                  </h1>
+                  <p className="text-lg text-black dark:text-white">
+                    {t('paragraph_three')}
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

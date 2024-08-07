@@ -64,7 +64,6 @@ export function Release() {
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Release Timeline</h2>
             <div className="relative pl-6 before:absolute before:inset-y-0 before:left-0 before:w-px before:bg-muted-foreground/20 space-y-8">
               <div className="grid grid-cols-[auto_1fr] items-start gap-4 relative">
-                <div className="aspect-square w-5 bg-primary rounded-full absolute left-0 translate-x-[-50%] z-10" />
                 <div>
                   <h3 className="text-xl font-bold">Beta Release</h3>
                   <p className="text-muted-foreground">July 1, 2024</p>
@@ -74,7 +73,6 @@ export function Release() {
                 </div>
               </div>
               <div className="grid grid-cols-[auto_1fr] items-start gap-4 relative">
-                <div className="aspect-square w-5 bg-primary rounded-full absolute left-0 translate-x-[-50%] z-10" />
                 <div>
                   <h3 className="text-xl font-bold">Feature Freeze</h3>
                   <p className="text-muted-foreground">August 15, 2024</p>
@@ -84,7 +82,6 @@ export function Release() {
                 </div>
               </div>
               <div className="grid grid-cols-[auto_1fr] items-start gap-4 relative">
-                <div className="aspect-square w-5 bg-primary rounded-full absolute left-0 translate-x-[-50%] z-10" />
                 <div>
                   <h3 className="text-xl font-bold">Final Release</h3>
                   <p className="text-muted-foreground">September 15, 2024</p>

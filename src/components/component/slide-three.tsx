@@ -13,7 +13,7 @@ export function SlideThree() {
         </div>
         <Link
           href="#"
-          className="inline-flex items-center justify-center bg-white text-[#0077b6] font-medium text-lg rounded-md px-8 py-3 transition-colors hover:bg-[#00a8e8] hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0077b6]"
+          className="inline-flex items-center justify-center bg-white text-[#22333b] font-medium text-lg rounded-md px-8 py-3 transition-colors hover:bg-[#00a8e8] hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0077b6]"
           prefetch={false}
         >
           Get Started

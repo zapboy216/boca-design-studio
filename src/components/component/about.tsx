@@ -13,9 +13,9 @@ export function About() {
           />
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl xl:text-7xl">Acme Florida</h1>
+              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl xl:text-7xl">Boca Florida</h1>
               <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                Acme Florida is a leading provider of innovative solutions for businesses in the Sunshine State. With a
+                Boca Florida is a leading provider of innovative solutions for businesses in the Sunshine State. With a
                 focus on cutting-edge technology and exceptional customer service, we've become the trusted partner for
                 companies of all sizes.
               </p>
@@ -31,7 +31,7 @@ export function About() {
                 Awards &amp; Accomplishments
               </h2>
               <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Acme Florida has been recognized for its excellence in technology, innovation, and customer service.
+                Boca Florida has been recognized for its excellence in technology, innovation, and customer service.
               </p>
             </div>
           </div>
@@ -106,7 +106,7 @@ export function About() {
               Located in Beautiful Florida
             </h2>
             <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Acme Florida is headquartered in the heart of the Sunshine State, surrounded by stunning natural beauty
+              Boca Florida is headquartered in the heart of the Sunshine State, surrounded by stunning natural beauty
               and a thriving business community.
             </p>
           </div>

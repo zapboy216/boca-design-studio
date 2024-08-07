@@ -26,10 +26,10 @@ export function Foote() {
         <div className="flex flex-col items-start gap-4">
           <Link href="#" className="flex items-center gap-2" prefetch={false}>
             <MountainIcon className="w-8 h-8 text-primary" />
-            <span className="text-2xl font-bold">Acme Software</span>
+            <span className="text-2xl font-bold">Boca Software</span>
           </Link>
           <p className="text-muted-foreground max-w-md">
-            Acme Software is a leading software development firm that specializes in creating innovative and
+            Boca Software is a leading software development firm that specializes in creating innovative and
             user-friendly applications for businesses of all sizes.
           </p>
         </div>
@@ -81,7 +81,7 @@ export function Foote() {
         </div>
       </div>
       <div className="container max-w-7xl mt-8 flex flex-col md:flex-row items-center justify-between">
-        <p className="text-muted-foreground text-sm">&copy; 2024 Acme Software. All rights reserved.</p>
+        <p className="text-muted-foreground text-sm">&copy; 2024 Boca Software. All rights reserved.</p>
         <div className="flex gap-4 text-sm">
           <Link href="#" className="text-muted-foreground hover:underline" prefetch={false}>
             Terms of Service

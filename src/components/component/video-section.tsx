@@ -5,7 +5,7 @@ import Link from "next/link"
 export function VideoSection() {
   return (
     <div>
-      <section className="w-full bg-muted py-12 md:py-24 lg:py-32">
+      <section id="video-presentation" className="w-full bg-muted py-12 md:py-24 lg:py-32">
         <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
           <div className="relative aspect-video w-full overflow-hidden rounded-lg">
             <video className="h-full w-full object-cover">

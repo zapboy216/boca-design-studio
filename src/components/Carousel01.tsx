@@ -3,6 +3,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import Image from 'next/image'
 import { useTranslations } from 'next-intl';
+import "@/styles/carousel.css";
 
 
 const Carousel01 = () => {
@@ -31,7 +32,7 @@ const Carousel01 = () => {
                 muted
               />
               <div className="relative z-10 text-center p-4 animate__animated animate__fadeInUp">
-                <div className="p-10 glassmorphism dark:charcoal-bg">
+                <div className="p-20 bg-neutral-100 dark:bg-neutral-900 bg-charcoal" style={{ opacity: 0.5 }}>
                 <h1 className="text-4xl font-bold mb-4 text-black dark:text-white">
                  {t('heading_one')}
                 </h1>
@@ -49,7 +50,7 @@ const Carousel01 = () => {
                 fill={true}
               />
               <div className="relative z-10 text-center p-4 animate__animated animate__fadeInUp">
-              <div className="p-10 glassmorphism dark:charcoal-bg">
+              <div className="p-20 bg-neutral-100 dark:bg-neutral-900 bg-charcoal" style={{ opacity: 0.5 }}>
                 <h1 className="text-4xl font-bold mb-4 text-black dark:text-white">
                  {t('heading_two')}
                 </h1>
@@ -66,7 +67,7 @@ const Carousel01 = () => {
                 fill={true}
               />
               <div className="relative z-10 text-center p-4 animate__animated animate__fadeInUp">
-              <div className="p-10 glassmorphism dark:charcoal-bg">
+              <div className="p-20 bg-neutral-100 dark:bg-neutral-900 bg-charcoal" style={{ opacity: 0.5 }}>
                 <h1 className="text-4xl font-bold mb-4 text-black dark:text-white">
                   {t('heading_three')}
                 </h1>

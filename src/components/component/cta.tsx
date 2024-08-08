@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export function Cta() {
   return (
-    <section className="w-full py-20 md:py-32 bg-[url('/bg-pattern.svg')] bg-cover bg-center bg-no-repeat">
+    <section id="call-to-action" className="w-full py-20 md:py-32 bg-[url('/bg-pattern.svg')] bg-cover bg-center bg-no-repeat">
       <div className="container px-4 md:px-6 lg:px-8 text-center">
         <div className="max-w-3xl mx-auto space-y-6">
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight">

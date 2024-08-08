@@ -17,9 +17,6 @@ export function Navbar() {
           <Link href="#portfolio" className="text-md  text-black dark:text-white hover:underline" prefetch={false}>
             Portfolio
           </Link>
-          <Link href="#call-to-action" className="text-md text-black dark:text-white hover:underline" prefetch={false}>
-            Call to Action
-          </Link>
           <Link href="#future-software-release" className="text-md text-black dark:text-white hover:underline" prefetch={false}>
             Future Releases
           </Link>
@@ -27,10 +24,10 @@ export function Navbar() {
             About Us
           </Link>
           <Link href="#video-presentation" className="text-md  text-black dark:text-white hover:underline" prefetch={false}>
-            Video Presentation
+            Presentation
           </Link>
           <Link href="#contact" className="text-md  text-black dark:text-white hover:underline" prefetch={false}>
-            Contact
+            Contact Us
           </Link>
         </div>
         <Sheet>
@@ -42,25 +39,25 @@ export function Navbar() {
           </SheetTrigger>
           <SheetContent side="left" className="md:hidden">
             <div className="grid gap-4 py-6">
-              <Link href="#landing" className="flex w-full items-center py-2 text-lg font-bold text-white hover:text-blue-600 transition-transform transform hover:scale-1.25" prefetch={false}>
+              <Link href="#landing" className="flex w-full items-center py-2 text-lg font-bold text-black hover:text-blue-600 transition-transform transform hover:scale-1.25" prefetch={false}>
                 Home
               </Link>
-              <Link href="#portfolio" className="flex w-full items-center py-2 text-lg font-bold text-white hover:text-blue-600 transition-transform transform hover:scale-1.25" prefetch={false}>
+              <Link href="#portfolio" className="flex w-full items-center py-2 text-lg font-bold text-black hover:text-blue-600 transition-transform transform hover:scale-1.25" prefetch={false}>
                 Portfolio
               </Link>
-              <Link href="#call-to-action" className="flex w-full items-center py-2 text-lg font-bold text-white hover:text-blue-600 transition-transform transform hover:scale-1.25" prefetch={false}>
+              <Link href="#call-to-action" className="flex w-full items-center py-2 text-lg font-bold text-black hover:text-blue-600 transition-transform transform hover:scale-1.25" prefetch={false}>
                 Call to Action
               </Link>
-              <Link href="#future-software-release" className="flex w-full items-center py-2 text-lg font-bold text-white hover:text-blue-600 transition-transform transform hover:scale-1.25" prefetch={false}>
+              <Link href="#future-software-release" className="flex w-full items-center py-2 text-lg font-bold text-black hover:text-blue-600 transition-transform transform hover:scale-1.25" prefetch={false}>
                 Future Releases
               </Link>
-              <Link href="#about-us" className="flex w-full items-center py-2 text-lg font-bold text-white hover:text-blue-600 transition-transform transform hover:scale-1.25" prefetch={false}>
+              <Link href="#about-us" className="flex w-full items-center py-2 text-lg font-bold text-black hover:text-blue-600 transition-transform transform hover:scale-1.25" prefetch={false}>
                 About Us
               </Link>
-              <Link href="#video-presentation" className="flex w-full items-center py-2 text-lg font-bold text-white hover:text-blue-600 transition-transform transform hover:scale-1.25" prefetch={false}>
+              <Link href="#video-presentation" className="flex w-full items-center py-2 text-lg font-bold text-black hover:text-blue-600 transition-transform transform hover:scale-1.25" prefetch={false}>
                 Video Presentation
               </Link>
-              <Link href="#contact" className="flex w-full items-center py-2 text-lg font-bold text-white hover:text-blue-600 transition-transform transform hover:scale-1.25" prefetch={false}>
+              <Link href="#contact" className="flex w-full items-center py-2 text-lg font-bold text-black hover:text-blue-600 transition-transform transform hover:scale-1.25" prefetch={false}>
                 Contact
               </Link>
             </div>

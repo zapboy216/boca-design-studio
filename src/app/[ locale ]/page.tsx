@@ -5,14 +5,15 @@ import { toastifyNotification } from "@/utils/toastifyNotification";
 import Carousel01 from "@/components/Carousel01";
 import Carousel02 from "@/components/Carousel02";
 import Carousel03 from "@/components/Carousel03";
-import Portfolio from '@components/Portfolio';
-import CallToAction from '@components/CallToAction';
-import FutureSoftwareRelease from '@components/FutureSoftwareRelease';
-import AboutUs from '@components/AboutUs';
-import VideoPresentation from '@components/VideoPresentation';
-import ContactSection from '@components/ContactSection';
+import { Portfolios } from '@/components/component/portfolios'
+import { Cta } from '@/components/component/cta'
+import { Release } from '@/components/component/release'
+
+import { About } from '@/components/component/about'
+import { VideoSection } from '@/components/component/video-section'
+import { ContactUs } from '@/components/component/contact-us'
 import { Navbar } from '@/components/component/navbar';
-import Footer from '@/components/Footer';
+import { Foote } from '@/components/component/foote'
 import "@/styles/carousel.css";
 
 export default function HomePage() {
@@ -31,15 +32,15 @@ export default function HomePage() {
       <div className="bg-neutral-100 dark:bg-neutral-900">
     <Navbar />
     <Carousel01 />
-    <Portfolio/>
+    <Portfolios />
     <Carousel03 />  
-    <CallToAction />
-    <FutureSoftwareRelease />
-    <AboutUs />
+    <Cta />
+    <Release />
+    <About />
     <Carousel02 />
-    <VideoPresentation />
-    <ContactSection />
-    <Footer />
+    <VideoSection />
+    <ContactUs />
+    <Foote />
       
       <button
         className="fixed w-16 h-16 top-16 right-16 bg-neutral-900 dark:bg-neutral-100 rounded-full text-white dark:text-neutral-900"

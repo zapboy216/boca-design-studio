@@ -14,7 +14,7 @@ export function Navbar() {
           <Link href="#landing" className="text-md  text-black dark:text-white hover:underline" prefetch={false}>
             Home
           </Link>
-          <Link href="#portfolio" className="text-md  text-black dark:text-white hover:underline" prefetch={false}>
+          <Link href="#work" className="text-md  text-black dark:text-white hover:underline" prefetch={false}>
             Portfolio
           </Link>
           <Link href="#future-software-release" className="text-md text-black dark:text-white hover:underline" prefetch={false}>
@@ -42,9 +42,11 @@ export function Navbar() {
               <Link href="#landing" className="flex w-full items-center py-2 text-lg font-bold text-black hover:text-blue-600 transition-transform transform hover:scale-1.25" prefetch={false}>
                 Home
               </Link>
-              <Link href="#portfolio" className="flex w-full items-center py-2 text-lg font-bold text-black hover:text-blue-600 transition-transform transform hover:scale-1.25" prefetch={false}>
+
+              <Link href="#port" className="flex w-full items-center py-2 text-lg font-bold text-black hover:text-blue-600 transition-transform transform hover:scale-1.25" prefetch={false}>
                 Portfolio
               </Link>
+              
               <Link href="#call-to-action" className="flex w-full items-center py-2 text-lg font-bold text-black hover:text-blue-600 transition-transform transform hover:scale-1.25" prefetch={false}>
                 Call to Action
               </Link>

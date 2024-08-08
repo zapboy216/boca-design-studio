@@ -15,7 +15,7 @@ export function About() {
             <div className="space-y-2">
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl xl:text-7xl">Boca Florida</h1>
               <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                Boca Florida is a leading provider of innovative solutions for businesses in the Sunshine State. With a
+                Boca Design is a leading provider of innovative solutions for businesses in the Sunshine State. With a
                 focus on cutting-edge technology and exceptional customer service, we've become the trusted partner for
                 companies of all sizes.
               </p>

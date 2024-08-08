@@ -5,18 +5,18 @@ import { Button } from "@/components/ui/button"
 
 export function Portfolios() {
   return (
-    <section id="work" className="container mx-auto py-12 md:py-16 lg:py-20">
+    <section id="work" className="container mx-auto py-12 md:py-16 lg:py-20 bg-neutral-100 dark:bg-neutral-900">
       <div className="mb-8 md:mb-10 lg:mb-12">
        
-        <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl">Portfolio</h2>
+        <h2 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl text-black dark:text-white"> Portfolio</h2>
         
-        <p className="mt-2 text-muted-foreground md:text-lg">Check out some of my previous web development projects.</p>
+        <p className="mt-2 text-muted-foreground md:text-lg text-black dark:text-white">Check out some of my previous web development projects.</p>
         
       </div>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         <div className="group relative overflow-hidden rounded-lg border transition-all duration-300 hover:shadow-lg">
           <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
-            <span className="sr-only">View project</span>
+            <span className="sr-only text-black dark:text-white">View project</span>
           </Link>
           <Image
             src="/placeholder.svg"
@@ -27,13 +27,13 @@ export function Portfolios() {
             style={{ aspectRatio: "600/400", objectFit: "cover" }}
           />
           <div className="p-4">
-            <h3 className="text-lg font-semibold">Project 1</h3>
-            <p className="mt-2 text-muted-foreground">Lorem ipsum</p>
+            <h3 className="text-lg font-semibold text-black dark:text-white">Project 1</h3>
+            <p className="mt-2 text-muted-foreground text-black dark:text-white">Lorem ipsum</p>
           </div>
         </div>
         <div className="group relative overflow-hidden rounded-lg border transition-all duration-300 hover:shadow-lg">
           <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
-            <span className="sr-only">View project</span>
+            <span className="sr-only text-black dark:text-white">View project</span>
           </Link>
           <Image
             src="/placeholder.svg"
@@ -44,13 +44,13 @@ export function Portfolios() {
             style={{ aspectRatio: "600/400", objectFit: "cover" }}
           />
           <div className="p-4">
-            <h3 className="text-lg font-semibold">Project 2</h3>
-            <p className="mt-2 text-muted-foreground">A modern blog website with a custom CMS and dark mode support.</p>
+            <h3 className="text-lg font-semibold text-black dark:text-white">Project 2</h3>
+            <p className="mt-2 text-muted-foreground text-black dark:text-white">A modern blog website with a custom CMS and dark mode support.</p>
           </div>
         </div>
         <div className="group relative overflow-hidden rounded-lg border transition-all duration-300 hover:shadow-lg">
           <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
-            <span className="sr-only">View project</span>
+            <span className="sr-only text-black dark:text-white">View project</span>
           </Link>
           <Image
             src="/placeholder.svg"
@@ -61,15 +61,15 @@ export function Portfolios() {
             style={{ aspectRatio: "600/400", objectFit: "cover" }}
           />
           <div className="p-4">
-            <h3 className="text-lg font-semibold">Project 3</h3>
-            <p className="mt-2 text-muted-foreground">
+            <h3 className="text-lg font-semibold text-black dark:text-white">Project 3</h3>
+            <p className="mt-2 text-muted-foreground text-black dark:text-white">
               A SaaS landing page with a responsive design and smooth animations.
             </p>
           </div>
         </div>
         <div className="group relative overflow-hidden rounded-lg border transition-all duration-300 hover:shadow-lg">
           <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
-            <span className="sr-only">View project</span>
+            <span className="sr-only text-black dark:text-white">View project</span>
           </Link>
           <Image
             src="/placeholder.svg"
@@ -80,8 +80,8 @@ export function Portfolios() {
             style={{ aspectRatio: "600/400", objectFit: "cover" }}
           />
           <div className="p-4">
-            <h3 className="text-lg font-semibold">Project 4</h3>
-            <p className="mt-2 text-muted-foreground">A web application for managing team tasks and projects.</p>
+            <h3 className="text-lg font-semibold text-black dark:text-white">Project 4</h3>
+            <p className="mt-2 text-muted-foreground text-black dark:text-white">A web application for managing team tasks and projects.</p>
           </div>
         </div>
       </div>
